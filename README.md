@@ -40,13 +40,13 @@ Demo mode uses pre-seeded mock data — no API keys or credentials needed.
 - Member schedule display (Mon–Sun)
 
 ### 2. Exception Order Processing
-- Pulls exception orders from Rainbow WMS
+- Pulls exception orders from WMS
 - Filter by status: Pending / Resolved / All
 - Two-step flow: scan SKU + manual verification
 
 ### 3. SKU Scan Search
 - Enter a SKU code to query: basic info, inventory distribution, historical location changes
-- Calls Rainbow WMS + China Post PDA APIs simultaneously
+- Calls WMS APIs simultaneously
 
 ### 4. AI Assistant (optional)
 - Natural language queries over tasks and exception data
@@ -83,8 +83,8 @@ main-Tally-APP/
 │   │   ├── database.py        DB connection
 │   │   └── main.py            FastAPI entry point
 │   ├── wms/
-│   │   ├── rainbow_api.py     Rainbow WMS API (Mock mode)
-│   │   ├── cp_api.py          China Post PDA API (Mock mode)
+│   │   ├── rainbow_api.py     WMS API (Mock mode)
+│   │   ├── cp_api.py         PDA API (Mock mode)
 │   │   └── router.py          WMS router aggregator
 │   ├── wms.db                 SQLite — WMS business data (mock)
 │   ├── tally.db               SQLite — members / tasks / schedules
@@ -106,35 +106,6 @@ main-Tally-APP/
 
 ---
 
-
-## Switching to Live APIs (optional)
-
-To connect to real WMS systems:
-
-### 1. Create `.env` from the template
-
-```bash
-cp .env.example .env
-```
-
-### 2. Fill in real credentials
-
-```env
-RAINBOW_TOKEN=your_rainbow_token
-CP_PHPSESSID=your_php_session_id
-SILICONFLOW_API_KEY=your_siliconflow_key
-```
-
-### 3. Disable Mock mode
-
-Change `MOCK_MODE = True` to `MOCK_MODE = False` in:
-
-```python
-# backend/wms/rainbow_api.py
-# backend/wms/cp_api.py
-```
-
----
 
 ## Reset Mock Data
 
