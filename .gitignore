@@ -1,0 +1,43 @@
+# ============================================================
+#  Tally App — .gitignore
+# ============================================================
+
+## Environment & secrets
+.env
+.env.local
+.env.production
+.env.example
+
+## Python
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+env/
+
+## Node
+# (npm packages are committed in demo mode to keep it runnable)
+# Uncomment and adjust if you prefer not to commit node_modules:
+# frontend/node_modules/
+# backend/node_modules/
+
+## Database — local/real data only
+# wms.db with mock data IS committed so the demo runs out-of-the-box
+local_wms.db
+backend/tally.db          # local member/task data — never commit
+
+## IDE
+.vscode/
+.idea/
+*.swp
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Build artifacts
+dist/
+build/
+*.log
+npm-debug.log*
