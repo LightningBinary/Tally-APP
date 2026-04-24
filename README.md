@@ -1,6 +1,6 @@
 # Tally App — Warehouse Team Management System
 
-> A web application integrating Rainbow WMS API and China Post PDA API to manage warehouse team daily tasks, exception order processing, and inventory queries.
+> A web application integrating WMS API and PDA API to manage warehouse team daily tasks, exception order processing, and inventory queries. This is for showcase only.
 
 ---
 
