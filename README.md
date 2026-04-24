@@ -58,10 +58,13 @@ Demo mode uses pre-seeded mock data — no API keys or credentials needed.
 
 | Feature | Preview |
 |---------|---------|
-| Task Board | ![Task Board](docs/Screenshot%202026-04-22%20165933.png) |
-| Exception Order Processing | ![Exception Orders](docs/Screenshot%202026-04-22%20170011.png) |
-| SKU Scan Search | ![SKU Scan](docs/Screenshot%202026-04-22%20170049.png) |
-| AI Assistant | ![AI Chat](docs/Screenshot%202026-04-22%20170144.png) |
+| Task Board | ![Task Board](docs/Task.png) |
+| Exception Order Processing | ![Abnormal Orders](docs/Abnormal.png) |
+| SKU Scan Search | ![Search](docs/Search.png) |
+| SKU Detail | ![SKU Card](docs/SKU%20Card.png) |
+| AI Assistant | ![AI Chart](docs/AI%20Chart.png) |
+| Member Schedule | ![Team](docs/Team.png) |
+| Settings | ![Settings](docs/Setting.png) |
 
 ---
 
